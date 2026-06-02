@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itinerary Jalur MRT Singapura</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mrt: {
+                            ewl: '#009530', // East West Line (Hijau)
+                            nsl: '#dc241f', // North South Line (Merah)
+                            nel: '#9900aa', // North East Line (Ungu)
+                            ccl: '#ff9e1b', // Circle Line (Oranye)
+                            dtl: '#005ec4', // Downtown Line (Biru)
+                            tel: '#9d5b25', // Thomson-East Coast Line (Cokelat)
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen">
+
+    <!-- Premium Header Card -->
+    <header class="bg-gradient-to-br from-slate-900 via-indigo-950 to-blue-900 text-white px-5 py-8 shadow-md">
+        <div class="max-w-xl mx-auto">
+            <span class="inline-block bg-orange-500 text-white text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full mb-3 shadow-sm">
+                Panduan Rute Efisien 2026
+            </span>
+            <h1 class="text-2xl font-extrabold tracking-tight mb-1">
+                Itinerary MRT Singapura
+            </h1>
+            <p class="text-xs text-slate-300 font-light leading-relaxed">
+                Rute perjalanan terklaster geografis. Hemat waktu transit, maksimalkan eksplorasi langsung dari layar ponsel Anda.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-xl mx-auto px-4 py-6 space-y-6">
+        
+        <!-- Hint Box -->
+        <div class="bg-amber-50 rounded-xl p-4 border border-amber-200 shadow-sm text-xs text-amber-900 leading-relaxed">
+            💡 <strong>Prinsip Rute:</strong> Semua destinasi harian disusun berurutan searah kompas dan jalur integrasi MRT. Anda tidak perlu bolak-balik di stasiun transit yang sama.
+        </div>
+
+        <!-- HARI 1 -->
+        <section class="space-y-3">
+            <div class="flex items-center space-x-2">
+                <div class="w-1 h-5 bg-orange-500 rounded-full"></div>
+                <h2 class="text-sm font-bold tracking-tight text-slate-900 uppercase">
+                    Hari 1 — Seni, Arsitektur & Landmark Kota
+                </h2>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm space-y-4">
+                <!-- Transit badges -->
+                <div class="flex flex-wrap gap-1.5 pb-2.5 border-b border-dashed border-slate-100 text-[11px] text-slate-500 items-center">
+                    <span class="font-medium mr-1">Akses Jalur:</span>
+                    <span class="bg-mrt-nsl text-white font-bold px-1.5 py-0.5 rounded text-[9px]">NS</span>
+                    <span class="bg-mrt-ewl text-white font-bold px-1.5 py-0.5 rounded text-[9px]">EW</span>
+                    <span class="bg-mrt-dtl text-white font-bold px-1.5 py-0.5 rounded text-[9px]">DT</span>
+                    <span class="bg-mrt-ccl text-slate-950 font-bold px-1.5 py-0.5 rounded text-[9px]">CC</span>
+                </div>
+
+                <!-- Custom Timeline UI -->
+                <div class="relative pl-4 border-l border-slate-200 space-y-5">
+                    
+                    <!-- Spot 1 -->
+                    <div class="relative">
+                        <div class="absolute -left-[21px] top-1 w-2.5 h-2.5 rounded-full bg-indigo-600 border-2 border-white ring-2 ring-indigo-100"></div>
+                        <span class="inline-block bg-slate-100 text-slate-700 font-bold text-[10px] px-2 py-0.5 rounded mb-1">
+                            09:00 - 11:30
+                        </span>
+                        <h3 class="text-sm font-bold text-slate-900">National Gallery & CHIJMES</h3>
+                        <p class="text-xs text-slate-600 mt-1 leading-relaxed text-justify">
+                            Turun di <span class="text-blue-600 font-medium">City Hall (NS25 / EW13)</span>. Eksplorasi arsitektur National Gallery, lalu jalan kaki ke CHIJMES untuk berfoto di tangga eskalator outdoor yang viral.
+                        </p>
+                    </div>
+
+                    <!-- Spot 2 -->
+                    <div class="relative">
+                        <div class="absolute -left-[21px] top-1 w-2.5 h-2.5 rounded-full bg-indigo-600 border-2 border-white ring-2 ring-indigo-100"></div>
+                        <span class="inline-block bg-slate-100 text-slate-700 font-bold text-[10px] px-2 py-0.5 rounded mb-1">
+                            11:30 - 13:30
+                        </span>
+                        <h3 class="text-sm font-bold text-slate-900">Old Hill Street Police Station & Mirror Balls</h3>
+                        <p class="text-xs text-slate-600 mt-1 leading-relaxed text-justify">
+                            Gunakan stasiun <span class="text-blue-600 font-medium">Clarke Quay (NE5)</span>. Foto berlatar jendela pelangi gedung legendaris, lalu temukan instalasi bola cermin estetik di pinggir sungai.
+                        </p>
+                    </div>
+
+                    <!-- Spot 3 -->
+                    <div class="relative">
+                        <div class="absolute -left-[21px] top-1 w-2.5 h-2.5 rounded-full bg-indigo-600 border-2 border-white ring-2 ring-indigo-100"></div>
+                        <span class="inline-block bg-slate-100 text-slate-700 font-bold text-[10px] px-2 py-0.5 rounded mb-1">
+                            14:00 - 16:00
+                        </span>
+                        <h3 class="text-sm font-bold text-slate-900">Merlion Park & Helix Bridge</h3>
+                        <p class="text-xs text-slate-600 mt-1 leading-relaxed text-justify">
+                            Akses via <span class="text-blue-600 font-medium">Raffles Place (NS26 / EW14)</span>. Berfoto wajib dengan ikon Merlion, dilanjutkan jalan santai menikmati pemandangan dari Helix Bridge yang futuristik.
+                        </p>
+                    </div>
+
+                    <!-- Spot 4 -->
+                    <div class="relative">
+                        <div class="absolute -left-[21px] top-1 w-2.5 h-2.5 rounded-full bg-indigo-600 border-2 border-white ring-2 ring-indigo-100"></div>
+                        <span class="inline-block bg-orange-100 text-orange-800 font-bold text-[10px] px-2 py-0.5 rounded mb-1">
+                            16:30 - 20:00
+                        </span>
+                        <h3 class="text-sm font-bold text-slate-900">MBS Overpass & Supertree Grove</h3>
+                        <p class="text-xs text-slate-600 mt-1 leading-relaxed text-justify">
+                            Keluar di stasiun <span class="text-blue-600 font-medium">Bayfront (DT16 / CC4)</span>. Tangkap potret simetris eskalator di Marina Bay Sands Overpass, lalu seberangi jembatan menuju pertunjukan lampu malam di Supertree Grove.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- HARI 2 -->
+        <section class="space-y-3">
+            <div class="flex items-center space-x-2">
+                <div class="w-1 h-5 bg-orange-500 rounded-full"></div>
+                <h2 class="text-sm font-bold tracking-tight text-slate-900 uppercase">
+                    Hari 2 — Warisan UNESCO, Belanja & Budaya
+                </h2>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm space-y-4">
+                <div class="flex flex-wrap gap-1.5 pb-2.5 border-b border-dashed border-slate-100 text-[11px] text-slate-500 items-center">
+                    <span class="font-medium mr-1">Akses Jalur:</span>
+                    <span class="bg-mrt-dtl text-white font-bold px-1.5 py-0.5 rounded text-[9px]">DT</span>
+                    <span class="bg-mrt-nel text-white font-bold px-1.5 py-0.5 rounded text-[9px]">NE</span>
+                    <span class="bg-mrt-tel text-white font-bold px-1.5 py-0.5 rounded text-[9px]">TE</span>
+                    <span class="bg-mrt-ccl text-slate-950 font-bold px-1.5 py-0.5 rounded text-[9px]">CC</span>
+                </div>
+
+                <div class="relative pl-4 border-l border-slate-200 space-y-5">
+                    
+                    <div class="relative">
+                        <div class="absolute -left-[21px] top-1 w-2.5 h-2.5 rounded-full bg-indigo-600 border-2 border-white ring-2 ring-indigo-100"></div>
+                        <span class="inline-block bg-slate-100 text-slate-700 font-bold text-[10px] px-2 py-0.5 rounded mb-1">
+                            08:30 - 11:00
+                        </span>
+                        <h3 class="text-sm font-bold text-slate-900">Singapore Botanic Gardens</h3>
+                        <p class="text-xs text-slate-600 mt-1 leading-relaxed text-justify">
+                            Pintu keluar langsung di stasiun <span class="text-blue-600 font-medium">Botanic Gardens (CC19 / DT9)</span>. Nikmati pagi yang sejuk di taman botani warisan dunia UNESCO sebelum cuaca kota memanas.
+                        </p>
+                    </div>
+
+                    <div class="relative">
+                        <div class="absolute -left-[21px] top-1 w-2.5 h-2.5 rounded-full bg-indigo-600 border-2 border-white ring-2 ring-indigo-100"></div>
+                        <span class="inline-block bg-slate-100 text-slate-700 font-bold text-[10px] px-2 py-0.5 rounded mb-1">
+                            11:30 - 14:00
+                        </span>
+                        <h3 class="text-sm font-bold text-slate-900">Haji Lane, Bugis Street & ABC Bargain</h3>
+                        <p class="text-xs text-slate-600 mt-1 leading-relaxed text-justify">
+                            Turun di <span class="text-blue-600 font-medium">Bugis (EW12 / DT14)</span>. Abadikan mural unik di Haji Lane, berburu suvenir murah di Bugis Street, dan borong cokelat miring di toko grosir ABC Bargain Centre.
+                        </p>
+                    </div>
+
+                    <div class="relative">
+                        <div class="absolute -left-[21px] top-1 w-2.5 h-2.5 rounded-full bg-indigo-600 border-2 border-white ring-2 ring-indigo-100"></div>
+                        <span class="inline-block bg-slate-100 text-slate-700 font-bold text-[10px] px-2 py-0.5 rounded mb-1">
+                            14:30 - 16:30
+                        </span>
+                        <h3 class="text-sm font-bold text-slate-900">Mustafa Centre (Little India)</h3>
+                        <p class="text-xs text-slate-600 mt-1 leading-relaxed text-justify">
+                            Gunakan stasiun <span class="text-blue-600 font-medium">Farrer Park (NE8)</span>. Eksplorasi toserba mega-grosir 24 jam untuk berbelanja parfum, kebutuhan harian, atau cokelat impor berskala besar dengan harga miring.
+                        </p>
+                    </div>
+
+                    <div class="relative">
+                        <div class="absolute -left-[21px] top-1 w-2.5 h-2.5 rounded-full bg-indigo-600 border-2 border-white ring-2 ring-indigo-100"></div>
+                        <span class="inline-block bg-orange-100 text-orange-800 font-bold text-[10px] px-2 py-0.5 rounded mb-1">
+                            17:00 - 19:30
+                        </span>
+                        <h3 class="text-sm font-bold text-slate-900">Ann Siang Hill & Chinatown</h3>
+                        <p class="text-xs text-slate-600 mt-1 leading-relaxed text-justify">
+                            Turun di stasiun <span class="text-blue-600 font-medium">Maxwell (TE18)</span> atau <span class="text-blue-600 font-medium">Chinatown (NE4 / DT19)</span>. Jelajahi kawasan ruko retro Ann Siang Hill dan nikmati makan malam kuliner lokal di Chinatown.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- HARI 3 -->
+        <section class="space-y-3">
+            <div class="flex items-center space-x-2">
+                <div class="w-1 h-5 bg-orange-500 rounded-full"></div>
+                <h2 class="text-sm font-bold tracking-tight text-slate-900 uppercase">
+                    Hari 3 — Spot Instagenic & Jewel Changi
+                </h2>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm space-y-4">
+                <div class="flex flex-wrap gap-1.5 pb-2.5 border-b border-dashed border-slate-100 text-[11px] text-slate-500 items-center">
+                    <span class="font-medium mr-1">Akses Jalur:</span>
+                    <span class="bg-mrt-nsl text-white font-bold px-1.5 py-0.5 rounded text-[9px]">NS</span>
+                    <span class="bg-mrt-ewl text-white font-bold px-1.5 py-0.5 rounded text-[9px]">EW</span>
+                    <span class="bg-mrt-tel text-white font-bold px-1.5 py-0.5 rounded text-[9px]">TE</span>
+                    <span class="bg-mrt-ewl text-white font-bold px-2 py-0.5 rounded text-[9px]">CG</span>
+                </div>
+
+                <div class="relative pl-4 border-l border-slate-200 space-y-5">
+                    
+                    <div class="relative">
+                        <div class="absolute -left-[21px] top-1 w-2.5 h-2.5 rounded-full bg-indigo-600 border-2 border-white ring-2 ring-indigo-100"></div>
+                        <span class="inline-block bg-slate-100 text-slate-700 font-bold text-[10px] px-2 py-0.5 rounded mb-1">
+                            09:00 - 11:30
+                        </span>
+                        <h3 class="text-sm font-bold text-slate-900">Fort Canning Tree Tunnel</h3>
+                        <p class="text-xs text-slate-600 mt-1 leading-relaxed text-justify">
+                            Akses terdekat dari <span class="text-blue-600 font-medium">Fort Canning (DT20)</span>. Datang lebih pagi untuk mengantre foto di tangga melingkar ikonik berlatar kanopi pohon besar.
+                        </p>
+                    </div>
+
+                    <div class="relative">
+                        <div class="absolute -left-[21px] top-1 w-2.5 h-2.5 rounded-full bg-indigo-600 border-2 border-white ring-2 ring-indigo-100"></div>
+                        <span class="inline-block bg-slate-100 text-slate-700 font-bold text-[10px] px-2 py-0.5 rounded mb-1">
+                            12:00 - 14:30
+                        </span>
+                        <h3 class="text-sm font-bold text-slate-900">Orchard Road & Toko Valu$</h3>
+                        <p class="text-xs text-slate-600 mt-1 leading-relaxed text-justify">
+                            Turun di <span class="text-blue-600 font-medium">Orchard (NS22 / TE14)</span>. Berjalan di trotoar pusat mode belanja, lalu mampir ke Lucky Plaza untuk membeli camilan cokelat diskon miring di gerai Valu$.
+                        </p>
+                    </div>
+
+                    <div class="relative">
+                        <div class="absolute -left-[21px] top-1 w-2.5 h-2.5 rounded-full bg-indigo-600 border-2 border-white ring-2 ring-indigo-100"></div>
+                        <span class="inline-block bg-orange-100 text-orange-800 font-bold text-[10px] px-2 py-0.5 rounded mb-1">
+                            15:30 - Selesai
+                        </span>
+                        <h3 class="text-sm font-bold text-slate-900">Jewel Changi Experience</h3>
+                        <p class="text-xs text-slate-600 mt-1 leading-relaxed text-justify">
+                            Gunakan jalur hijau ke stasiun <span class="text-blue-600 font-medium">Changi Airport (CG2)</span>. Nikmati kemegahan air terjun Rain Vortex, ambil cetak foto strip seru di <strong>Solace Studios</strong>, jajan di <strong>SugarBelly</strong>, dan nikmati kesegaran minuman kelapa kocok dari <strong>Mr Coconut</strong>.
+                        </p>
+                        <!-- Opsional Marina Barrage info -->
+                        <p class="text-[11px] text-slate-400 italic mt-1">
+                            *Saran alternatif: Jika jadwal terbang Anda larut malam, sore hari bisa diselingi bersantai melihat senja di atap rumput Marina Barrage.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Pro Tip Card -->
+        <div class="bg-emerald-50 rounded-2xl border border-emerald-200 p-4 shadow-sm">
+            <h4 class="text-emerald-900 text-xs font-bold uppercase tracking-wider mb-0.5">
+                💡 Tip Pembayaran MRT Kontan
+            </h4>
+            <p class="text-[11px] text-emerald-800 leading-relaxed text-justify">
+                Tidak perlu mengantre beli kartu fisik eceran. Cukup tap langsung kartu kredit/debit berlogo contactless (seperti Visa/Mastercard berlogo Wave) terbitan bank Indonesia Anda atau dompet digital di ponsel pintar Anda pada *gantry* stasiun.
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 text-[10px] text-slate-400 border-t border-slate-200/50 mt-6">
+        Singapore MRT Map Spatial-Optimized Layout &bull; Mobile-First Minimalist &bull; 2026
+    </footer>
+
+</body>
+</html>
