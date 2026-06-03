@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Singapore Spots by Bundanya Tsabeena</title>
-  <meta name="description" content="Peta itinerary Singapore Spots by Bundanya Tsabeena berisi titik wisata dan belanja di Singapura." />
+  <title>Singapore Spots by MRT</title>
+  <meta name="description" content="Peta itinerary Singapore Spots by MRT berisi titik wisata dan belanja di Singapura." />
 
   <style>
     :root {
@@ -193,7 +193,7 @@
     .spot-list {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
+      gap: 12px;
       margin-top: 18px;
     }
 
@@ -201,23 +201,46 @@
       background: #f8fafc;
       border: 1px solid #e5edf5;
       border-radius: 14px;
-      padding: 12px;
+      padding: 14px;
       font-size: 14px;
       color: #233956;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
-    .spot span {
+    .spot-title {
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+
+    .spot-title span {
       display: inline-flex;
-      width: 26px;
-      height: 26px;
+      width: 24px;
+      height: 24px;
       align-items: center;
       justify-content: center;
       border-radius: 999px;
       background: var(--accent);
       color: #fff;
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 800;
-      margin-right: 7px;
+      margin-right: 8px;
+      flex-shrink: 0;
+    }
+
+    .spot-mrt {
+      font-size: 12px;
+      color: #df4700;
+      font-weight: 600;
+      background: #fff3ed;
+      padding: 4px 8px;
+      border-radius: 6px;
+      display: inline-block;
+      align-self: flex-start;
     }
 
     .footer {
@@ -273,7 +296,7 @@
           <h1>Singapore Spots by MRT</h1>
           <p class="lead">
             Peta itinerary berisi 23 titik wisata, belanja, dan spot foto di Singapura.
-            Cocok dipakai untuk menyusun rute jalan kaki dan MRT selama liburan bareng Bunda dan Bee.
+            Cocok dipakai untuk menyusun rute jalan kaki dan MRT selama liburan.
           </p>
 
           <div class="actions">
@@ -325,34 +348,103 @@
         </div>
 
         <div class="spot-list" aria-label="Daftar titik">
-          <div class="spot"><span>1</span>National Gallery Singapore</div>
-          <div class="spot"><span>2</span>Haji Lane</div>
-          <div class="spot"><span>3</span>Merlion Park</div>
-          <div class="spot"><span>4</span>Marina Barrage</div>
-          <div class="spot"><span>5</span>CHIJMES Escalator</div>
-          <div class="spot"><span>6</span>Solace Studio Changi</div>
-          <div class="spot"><span>7</span>Jewel Changi</div>
-          <div class="spot"><span>8</span>Bugis Street</div>
-          <div class="spot"><span>9</span>Marina Bay Sands</div>
-          <div class="spot"><span>10</span>Marina Bay Overpass</div>
-          <div class="spot"><span>11</span>Fort Canning Park</div>
-          <div class="spot"><span>12</span>ABC</div>
-          <div class="spot"><span>13</span>Lucky Plaza</div>
-          <div class="spot"><span>14</span>Valu$</div>
-          <div class="spot"><span>15</span>Mustafa Centre</div>
-          <div class="spot"><span>16</span>Old Hill Street Police Station</div>
-          <div class="spot"><span>17</span>Gardens by the Bay: Supertree Grove</div>
-          <div class="spot"><span>18</span>Helix Bridge</div>
-          <div class="spot"><span>19</span>Sugar Belly Changi</div>
-          <div class="spot"><span>20</span>Mr Coconut Changi</div>
-          <div class="spot"><span>21</span>Botanic Garden</div>
-          <div class="spot"><span>22</span>Mirror Balls Sculpture</div>
-          <div class="spot"><span>23</span>Ann Siang Hill</div>
+          <div class="spot">
+            <div class="spot-title"><span>1</span>National Gallery Singapore</div>
+            <div class="spot-mrt">MRT City Hall (EW13/NS25)</div>
+          </div>
+          <div class="spot">
+            <div class="spot-title"><span>2</span>Haji Lane</div>
+            <div class="spot-mrt">MRT Bugis (EW12/DT14)</div>
+          </div>
+          <div class="spot">
+            <div class="spot-title"><span>3</span>Merlion Park</div>
+            <div class="spot-mrt">MRT Raffles Place (EW14/NS26)</div>
+          </div>
+          <div class="spot">
+            <div class="spot-title"><span>4</span>Marina Barrage</div>
+            <div class="spot-mrt">MRT Gardens by the Bay (TE22)</div>
+          </div>
+          <div class="spot">
+            <div class="spot-title"><span>5</span>CHIJMES Escalator</div>
+            <div class="spot-mrt">MRT City Hall (EW13/NS25)</div>
+          </div>
+          <div class="spot">
+            <div class="spot-title"><span>6</span>Solace Studios Changi</div>
+            <div class="spot-mrt">MRT Changi Airport (CG2)</div>
+          </div>
+          <div class="spot">
+            <div class="spot-title"><span>7</span>Jewel Changi Airport</div>
+            <div class="spot-mrt">MRT Changi Airport (CG2)</div>
+          </div>
+          <div class="spot">
+            <div class="spot-title"><span>8</span>Bugis Street</div>
+            <div class="spot-mrt">MRT Bugis (EW12/DT14)</div>
+          </div>
+          <div class="spot">
+            <div class="spot-title"><span>9</span>Marina Bay Sands</div>
+            <div class="spot-mrt">MRT Bayfront (CE1/DT16)</div>
+          </div>
+          <div class="spot">
+            <div class="spot-title"><span>10</span>Marina Bay Overpass</div>
+            <div class="spot-mrt">MRT Bayfront (CE1/DT16)</div>
+          </div>
+          <div class="spot">
+            <div class="spot-title"><span>11</span>Fort Canning Park</div>
+            <div class="spot-mrt">MRT Fort Canning (DT20)</div>
+          </div>
+          <div class="spot">
+            <div class="spot-title"><span>12</span>ABC Cooking Studio (Takashimaya)</div>
+            <div class="spot-mrt">MRT Orchard (NS22/TE14)</div>
+          </div>
+          <div class="spot">
+            <div class="spot-title"><span>13</span>Lucky Plaza</div>
+            <div class="spot-mrt">MRT Orchard (NS22/TE14)</div>
+          </div>
+          <div class="spot">
+            <div class="spot-title"><span>14</span>Valu$ Shop (Lucky Plaza)</div>
+            <div class="spot-mrt">MRT Orchard (NS22/TE14)</div>
+          </div>
+          <div class="spot">
+            <div class="spot-title"><span>15</span>Mustafa Centre</div>
+            <div class="spot-mrt">MRT Farrer Park (NE8)</div>
+          </div>
+          <div class="spot">
+            <div class="spot-title"><span>16</span>Old Hill Street Police Station</div>
+            <div class="spot-mrt">MRT Clarke Quay (NE5)</div>
+          </div>
+          <div class="spot">
+            <div class="spot-title"><span>17</span>Gardens by the Bay: Supertree Grove</div>
+            <div class="spot-mrt">MRT Bayfront (CE1/DT16)</div>
+          </div>
+          <div class="spot">
+            <div class="spot-title"><span>18</span>The Helix Bridge</div>
+            <div class="spot-mrt">MRT Bayfront (CE1/DT16)</div>
+          </div>
+          <div class="spot">
+            <div class="spot-title"><span>19</span>Sugar Belly Changi (Jewel)</div>
+            <div class="spot-mrt">MRT Changi Airport (CG2)</div>
+          </div>
+          <div class="spot">
+            <div class="spot-title"><span>20</span>Mr Coconut Changi (Jewel)</div>
+            <div class="spot-mrt">MRT Changi Airport (CG2)</div>
+          </div>
+          <div class="spot">
+            <div class="spot-title"><span>21</span>Singapore Botanic Gardens</div>
+            <div class="spot-mrt">MRT Botanic Gardens (CC19/DT9)</div>
+          </div>
+          <div class="spot">
+            <div class="spot-title"><span>22</span>Mirror Balls Sculpture (ACM)</div>
+            <div class="spot-mrt">MRT Raffles Place (EW14/NS26)</div>
+          </div>
+          <div class="spot">
+            <div class="spot-title"><span>23</span>Ann Siang Hill</div>
+            <div class="spot-mrt">MRT Maxwell (TE18)</div>
+          </div>
         </div>
       </section>
 
       <footer class="footer">
-        Peta ini dibuat untuk itinerary Bunda dan Bee. 
+        Peta ini dibuat untuk itinerary pribadi. Pastikan peta Google My Maps disetel public/shared agar embed tampil di website.
       </footer>
     </div>
   </main>
